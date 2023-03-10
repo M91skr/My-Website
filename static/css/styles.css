@@ -1,0 +1,329 @@
+:root {
+  --font: Times New Roman, sans-serif;
+  --Senf: #DAA520;
+  --fontsize: 1.8rem;
+  --lineheight: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 100% Garamond, var(--font);
+  text-align: center;
+  text-indent: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Verdana, var(--font);
+}
+
+p {
+  font-size: var(--fontsize);
+  word-break: keep-all;
+}
+
+::selection {
+  color: green;
+  background: yellow;
+}
+
+
+/*____________________ Headings ____________________*/
+
+.big-heading {
+  font: 3.5rem Verdana-Black, var(--font);
+  line-height: var(--lineheight);
+}
+
+
+/*____________________ Containers ____________________*/
+
+.container-fluid{
+  padding: 7% 15%;
+}
+
+
+/*____________________ Sections ____________________*/
+
+.colored-section {
+  background-color: var(--Senf);
+  color: #101a1a;
+}
+
+.white-section {
+  background-color: #fff;
+  color: #B8860B;
+}
+
+
+/*____________________ Navigation Bar ____________________*/
+
+.navbar {
+  padding: 0;
+  margin:0;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  position: fixed;
+  background-color: #AD8E70;
+  left: 0;
+}
+
+.nbar-det {
+  color: black;
+}
+
+.navbar-brand {
+  font: 3.5rem bold Verdana, var(--font);
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font: 2.1rem Garamond-Light, var(--font);
+}
+
+
+/*____________________ Title Section ____________________*/
+
+#title {
+  background-image: linear-gradient(#B99B6B, #FAD6A5, var(--Senf));
+  color: #000000;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 7% 10% 20% 10%;
+}
+
+
+/*____________________ Title Image ____________________*/
+
+.title-image {
+  width: 50%;
+  position: absolute;
+  right: 30%;
+}
+
+.title-image:hover {
+  opacity: 0.5;
+}
+
+
+/*____________________ Introduction Section ____________________*/
+
+.intro-title {
+  font-size: 4rem;
+  text-align: Center;
+}
+
+.intro-box {
+  text-align: justify;
+}
+
+.hyplink {
+  color: #61490c;
+  text-decoration: underline;
+}
+
+.hyplink:hover {
+  color: #800000;
+  text-decoration: none;
+}
+
+.intro-title + p::first-letter {
+  color: #61490c;
+  font-size: 200%;
+}
+
+
+/*____________________ Education Section ____________________*/
+
+#educations {
+  position: relative;
+}
+
+.education-title {
+  font-size: 3rem;
+}
+
+.education-box {
+  padding: 4.5%;
+}
+
+.e-icon {
+  color: #CD853F;
+  margin-bottom: 1rem;
+}
+
+.e-icon:hover {
+  color: #FF8C00;
+}
+
+
+/*____________________ Experience Section ____________________*/
+
+.experiences-title {
+  font-size: 3rem;
+}
+
+.experience-text {
+  font-size: var(--fontsize);
+  line-height: var(--lineheight);
+  text-align: left;
+}
+
+.experience-image {
+  width: 20%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.experience-big-image {
+  width: 20%;
+  border-radius: 10%;
+  margin: 20px;
+}
+
+.experience-big-image:hover , .experience-image:hover {
+  opacity: 0.5;
+}
+
+
+/*____________________ Certification Section ____________________*/
+
+.sql, .ml, .python {
+  width: 33%;
+}
+
+.deu_a1, .deu_b1 {
+  width: 50%;
+}
+
+.sml-pic {
+  margin: auto;
+  height: 300px;
+  width: 500px;
+}
+
+.big-pic {
+  margin: auto;
+  width: 300px;
+  height: 500px;
+}
+
+.big-pic:hover, .sml-pic:hover {
+  filter: saturate(7);
+}
+
+
+/*____________________ Skill Section ____________________*/
+
+.skill-title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.skill-text {
+  text-align: justify;
+  font-size: var(--fontsize);
+  line-height: var(--lineheight);
+  padding: 20px 0px 0px;
+}
+
+
+/*____________________ Language Section ____________________*/
+
+#languages {
+  position: relative;
+}
+
+.language-title {
+  font-size: 3rem;
+}
+
+.language-box {
+  padding: 4.5%;
+}
+
+.l-icon {
+  color: #CD853F;
+  margin-bottom: 1rem;
+}
+
+.l-icon:hover {
+  color: #FF8C00;
+}
+
+
+/*____________________ Footer Section ____________________*/
+
+#footer {
+  background-image: linear-gradient(#FFFFFF, #FAD6A5, var(--Senf));
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+.footer {
+  margin:0px 10px;
+  padding:20px 0px;
+}
+
+
+/*____________________ Responsive Webpage ____________________*/
+/* Problem1. Why is Bootstrap Navbar not closing (772 to 987)? */
+/* Problem2. Why does everything move to the left on a 775 x 356 screen? */
+
+@media (max-width: 1304px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: relative;
+    margin: 0;
+    top: 75%;
+    left: 25%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .sql, .ml,.python, .deu_a1, deu_b1 {
+    width: 100%;
+  }
+
+  .big-pic {
+    margin: auto;
+  }
+
+  .sml-pic {
+    margin: auto;
+  }
+
+  .navbar-toggler-icon {
+    position: relative;
+    display: inline-block;
+  }
+
+  #navbarTogglerDemo02 {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .navbar-toggler-icon:hover #navbarTogglerDemo02 {
+    display: block;
+  }
+}
+
