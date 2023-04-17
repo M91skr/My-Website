@@ -1,6 +1,6 @@
 :root {
   --font: Times New Roman, sans-serif;
-  --Senf: #DAA520;
+  --Senf: #F0A04B;
   --fontsize: 1.8rem;
   --lineheight: 1.5;
 }
@@ -10,13 +10,13 @@
 }
 
 body {
-  font: 100% Garamond, var(--font);
+  font: 100% Verdana, var(--font);
   text-align: center;
   text-indent: 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Verdana, var(--font);
+  font-family: Garamond, var(--font);
 }
 
 p {
@@ -33,7 +33,7 @@ p {
 /*____________________ Headings ____________________*/
 
 .big-heading {
-  font: 3.5rem Verdana-Black, var(--font);
+  font: 3.5rem Garamond-Black, var(--font);
   line-height: var(--lineheight);
 }
 
@@ -53,8 +53,8 @@ p {
 }
 
 .white-section {
-  background-color: #fff;
-  color: #B8860B;
+  background-color: #FEFBE9;
+  color: #F0A04B;
 }
 
 
@@ -67,7 +67,7 @@ p {
   top: 0;
   z-index: 1;
   position: fixed;
-  background-color: #AD8E70;
+  background-color: #E1EEDD;
   left: 0;
 }
 
@@ -91,7 +91,7 @@ p {
 /*____________________ Title Section ____________________*/
 
 #title {
-  background-image: linear-gradient(#B99B6B, #FAD6A5, var(--Senf));
+  background-image: linear-gradient(#183A1D, #E1EEDD, var(--Senf));
   color: #000000;
   text-align: left;
 }
@@ -126,17 +126,17 @@ p {
 }
 
 .hyplink {
-  color: #61490c;
+  color: #183A1D;
   text-decoration: underline;
 }
 
 .hyplink:hover {
-  color: #800000;
+  color: #E1EEDD;
   text-decoration: none;
 }
 
 .intro-title + p::first-letter {
-  color: #61490c;
+  color: #183A1D;
   font-size: 200%;
 }
 
@@ -156,12 +156,12 @@ p {
 }
 
 .e-icon {
-  color: #CD853F;
+  color: #F0A04B;
   margin-bottom: 1rem;
 }
 
 .e-icon:hover {
-  color: #FF8C00;
+  color: #183A1D;
 }
 
 
@@ -251,19 +251,19 @@ p {
 }
 
 .l-icon {
-  color: #CD853F;
+  color: #F0A04B;
   margin-bottom: 1rem;
 }
 
 .l-icon:hover {
-  color: #FF8C00;
+  color: #183A1D;
 }
 
 
 /*____________________ Footer Section ____________________*/
 
 #footer {
-  background-image: linear-gradient(#FFFFFF, #FAD6A5, var(--Senf));
+  background-image: linear-gradient(#FEFBE9, var(--Senf), #183A1D);
 }
 
 .social-icon {
