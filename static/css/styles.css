@@ -1,6 +1,6 @@
 :root {
   --font: Times New Roman, sans-serif;
-  --Senf: #F0A04B;
+  --Senf: #D3D04F;
   --fontsize: 1.8rem;
   --lineheight: 1.5;
 }
@@ -33,8 +33,13 @@ p {
 /*____________________ Headings ____________________*/
 
 .big-heading {
-  font: 3.5rem Garamond-Black, var(--font);
+  font: 7rem Garamond-Black, var(--font);
   line-height: var(--lineheight);
+}
+
+.big-par {
+  padding-top: 10%;
+  font: 3rem Garamond-Black, var(--font);
 }
 
 
@@ -49,12 +54,12 @@ p {
 
 .colored-section {
   background-color: var(--Senf);
-  color: #101a1a;
+  color: #213363;
 }
 
 .white-section {
-  background-color: #FEFBE9;
-  color: #F0A04B;
+  background-color: 8EAC50;
+  color: #17594A;
 }
 
 
@@ -91,8 +96,8 @@ p {
 /*____________________ Title Section ____________________*/
 
 #title {
-  background-image: linear-gradient(#183A1D, #E1EEDD, var(--Senf));
-  color: #000000;
+  background-image: linear-gradient(#17594A, #E1EEDD, var(--Senf));
+  color: #213363;
   text-align: left;
 }
 
@@ -107,6 +112,8 @@ p {
   width: 50%;
   position: absolute;
   right: 30%;
+  border: 10px double #213363;
+  border-radius: 50%;
 }
 
 .title-image:hover {
@@ -126,7 +133,7 @@ p {
 }
 
 .hyplink {
-  color: #183A1D;
+  color: #17594A;
   text-decoration: underline;
 }
 
@@ -136,7 +143,7 @@ p {
 }
 
 .intro-title + p::first-letter {
-  color: #183A1D;
+  color: #17594A;
   font-size: 200%;
 }
 
@@ -156,12 +163,12 @@ p {
 }
 
 .e-icon {
-  color: #F0A04B;
+  color: #17594A;
   margin-bottom: 1rem;
 }
 
 .e-icon:hover {
-  color: #183A1D;
+  color: #17594A;
 }
 
 
@@ -251,19 +258,19 @@ p {
 }
 
 .l-icon {
-  color: #F0A04B;
+  color: #17594A;
   margin-bottom: 1rem;
 }
 
 .l-icon:hover {
-  color: #183A1D;
+  color: #17594A;
 }
 
 
 /*____________________ Footer Section ____________________*/
 
 #footer {
-  background-image: linear-gradient(#FEFBE9, var(--Senf), #183A1D);
+  background-image: linear-gradient(#f9faf7, var(--Senf), #17594A);
 }
 
 .social-icon {
@@ -280,7 +287,7 @@ p {
 /* Problem1. Why is Bootstrap Navbar not closing (772 to 987)? */
 /* Problem2. Why does everything move to the left on a 775 x 356 screen? */
 
-@media (max-width: 1304px) {
+@media (max-width: 1302px) {
 
   #title {
     text-align: center;
@@ -293,6 +300,8 @@ p {
     left: 25%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    border: 10px solid #213363;
+    border-radius: 50%;
   }
 
   .sql, .ml,.python, .deu_a1, deu_b1 {

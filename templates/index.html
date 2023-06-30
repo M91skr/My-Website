@@ -2,49 +2,48 @@
 <html>
 
 <head>
+    <!-- Using utf-8 character encoding by the browser -->
     <meta charset="utf-8">
+
+    <!-- By determining the viewpoint gives instructions to the browser to control the dimensions and scale of the page. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ensures that IE uses the latest available rendering engine to render a web page. recommendation would be
+    to leave this tag out altogether, unless you must support old legacy browsers.
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+
     <title>Maryam Shakeri</title>
+
+    <!-- Display the favicon in the browser -->
     <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+
+    <!-- Getting started Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<!-- -------------------- Google Fonts -------------------- -->
-
+    <!-- -------------------- Google Fonts -------------------- -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
 
-<!--  -------------------- CSS Stylesheets -------------------- -->
-
+    <!--  -------------------- CSS Stylesheets -------------------- -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/styles.css">
 
-<!-- -------------------- Font Awesome -------------------- -->
-
+    <!-- -------------------- Font Awesome (Adding icons and .. to the page) -------------------- -->
     <script src="https://kit.fontawesome.com/f71e06c47e.js" crossorigin="anonymous"></script>
-
-<!-- -------------------- Bootstrap Scripts -------------------- -->
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+<!-- Definition of the title section -->
 <section class="colored-section" id="title">
+    <!-- container required by using bootstrap default grid system.
+    container-fluid, which is width: 100% at all breakpoints -->
     <div class="container-fluid">
-
-<!-- -------------------- Nav Bar -------------------- -->
-
-        <nav class="navbar navbar-expand-lg navbar-dark nbar-det">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="">Maryam Shakeri</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
                 <span class="navbar-toggler-icon"></span>
@@ -77,14 +76,14 @@
         </nav>
 
 <!-- -------------------- Title -------------------- -->
-
         <div class="row">
             <div class="col-lg-6">
-                <h1 class="big-heading">What's up here?</h1>
-                <p>If you want to get to know me on a short virtual tour, welcome!</p>
+                <p class="big-par">Hello, it's me</p>
+                <h1 class="big-heading">Maryam.</h1>
+                <h2>A process specialist and ...</h2>
             </div>
             <div class="col-lg-6">
-                <img class="title-image" src="static/images/main_pct.jpg" alt="maryam">
+                <img class="title-image" src="static/images/main_pct.png" alt="maryam">
             </div>
         </div>
     </div>
